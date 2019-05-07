@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const obj = {
+  foo: 123123,
+  retretret: 4567456456,
+};
+
 const App: React.FC = () => {
   return (
     <div className="App">
