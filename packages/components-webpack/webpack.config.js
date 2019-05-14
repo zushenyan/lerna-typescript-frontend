@@ -14,7 +14,22 @@ module.exports = {
         test: /\.tsx?$/,
         use: ['awesome-typescript-loader', 'eslint-loader'],
       },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        loader: 'source-map-loader',
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 0,
+        },
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader',
+      },
     ],
   },
   externals: {

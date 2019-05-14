@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 interface Props {
   text: string;
   onClick: () => void;
 }
 
-const Button = ({ text, onClick }: Props) => (
+const Button = ({ text, onClick }: Props): ReactElement => (
   <button onClick={onClick}>{text}</button>
 );
 
