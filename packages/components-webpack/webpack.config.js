@@ -7,6 +7,9 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      '@': `${__dirname}/src`,
+    },
   },
   module: {
     rules: [
