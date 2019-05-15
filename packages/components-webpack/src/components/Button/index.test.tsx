@@ -5,7 +5,7 @@ import Button from './index';
 describe('Button', (): void => {
   it('should work', (): void => {
     const onClick = jest.fn();
-    const component = renderer.create(<Button text="meow" onClick={onClick} />);
+    const component = renderer.create(<Button onClick={onClick}>aaa</Button>);
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

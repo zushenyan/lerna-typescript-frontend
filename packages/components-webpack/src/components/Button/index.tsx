@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 
 interface Props {
-  text: string;
+  children: string;
   onClick: () => void;
 }
 
-const Button = ({ text, onClick }: Props): ReactElement => (
-  <button onClick={onClick}>{text}</button>
+const Button = ({ children, onClick }: Props): ReactElement => (
+  <button onClick={onClick}>{children}</button>
 );
 
 export default Button;

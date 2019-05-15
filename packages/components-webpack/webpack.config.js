@@ -1,3 +1,5 @@
+const rules = require('./webpack.rules');
+
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -12,28 +14,7 @@ module.exports = {
     },
   },
   module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        use: ['awesome-typescript-loader', 'eslint-loader'],
-      },
-      {
-        test: /\.js$/,
-        enforce: 'pre',
-        loader: 'source-map-loader',
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 0,
-        },
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader',
-      },
-    ],
+    rules: [rules.ts, rules.sourceMap, rules.rawImageTypes, rules.svg],
   },
   externals: {
     react: 'React',

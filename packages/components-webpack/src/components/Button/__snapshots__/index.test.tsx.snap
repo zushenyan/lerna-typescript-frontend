@@ -4,6 +4,6 @@ exports[`Button should work 1`] = `
 <button
   onClick={[MockFunction]}
 >
-  meow
+  aaa
 </button>
 `;

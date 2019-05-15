@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Images should work 1`] = `
+<div>
+  <img
+    alt="gameControllerPng"
+    src="game-controller.png"
+  />
+  <img
+    alt="gameControllerJpg"
+    src="game-controller.jpg"
+  />
+  <img
+    alt="spinnerGif"
+    src="spinner.gif"
+  />
+  <img
+    alt="spinnerSvg"
+    src="spinner.svg"
+  />
+</div>
+`;
