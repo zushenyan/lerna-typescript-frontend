@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Images should work 1`] = `
+exports[`Storyshots Images initial props 1`] = `
 <div>
   <img
     alt="gameControllerPng"
@@ -14,9 +14,6 @@ exports[`Images should work 1`] = `
     alt="spinnerGif"
     src="spinner.gif"
   />
-  <img
-    alt="spinnerSvg"
-    src="spinner.svg"
-  />
+  <spinner.svg />
 </div>
 `;

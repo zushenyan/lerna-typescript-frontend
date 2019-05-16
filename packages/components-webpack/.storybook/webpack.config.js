@@ -3,6 +3,8 @@ const rules = require('../webpack.rules');
 
 module.exports = ({ config }) => {
   config.module.rules = [
+    rules.eslint,
+    rules.lintStyledComponents,
     rules.ts,
     rules.sourceMap,
     rules.rawImageTypes,
@@ -11,7 +13,6 @@ module.exports = ({ config }) => {
       test: /\.stories\.tsx?$/,
       loader: '@storybook/addon-storysource/loader',
       options: { parser: 'typescript' },
-      enforce: 'pre',
     },
   ];
   config.devtool = buildConfig.devtool;
