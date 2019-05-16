@@ -1,10 +1,3 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Images from './index';
+import initStoryshots from '@storybook/addon-storyshots';
 
-describe('Images', (): void => {
-  it('should work', (): void => {
-    const component = renderer.create(<Images />);
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-});
+initStoryshots({ storyKindRegex: /^Images$/ });

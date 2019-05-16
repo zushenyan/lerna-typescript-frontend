@@ -1,12 +1,34 @@
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
+  .default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
+
+module.exports.eslint = {
+  test: /\.tsx?$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  exclude: /node_modules/,
+};
+
 module.exports.ts = {
   test: /\.tsx?$/,
-  use: ['awesome-typescript-loader', 'eslint-loader'],
+  loader: 'awesome-typescript-loader',
+  exclude: /node_modules/,
+  options: {
+    getCustomTransformers: () => ({ before: [styledComponentsTransformer] }),
+  },
+};
+
+module.exports.lintStyledComponents = {
+  test: /\.tsx?$/,
+  loader: 'stylelint-custom-processor-loader',
+  exclude: /node_modules/,
+  // enforce: 'pre',
 };
 
 module.exports.sourceMap = {
   test: /\.js$/,
-  enforce: 'pre',
   loader: 'source-map-loader',
+  enforce: 'pre',
 };
 
 module.exports.rawImageTypes = {

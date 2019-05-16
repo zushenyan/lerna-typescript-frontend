@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should work 1`] = `
+exports[`Storyshots Button with text 1`] = `
 <button
-  onClick={[MockFunction]}
+  onClick={[Function]}
 >
   aaa
 </button>

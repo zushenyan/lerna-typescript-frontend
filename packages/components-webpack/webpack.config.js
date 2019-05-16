@@ -14,7 +14,14 @@ module.exports = {
     },
   },
   module: {
-    rules: [rules.ts, rules.sourceMap, rules.rawImageTypes, rules.svg],
+    rules: [
+      rules.eslint,
+      rules.lintStyledComponents,
+      rules.ts,
+      rules.sourceMap,
+      rules.rawImageTypes,
+      rules.svg,
+    ],
   },
   externals: {
     react: 'React',
