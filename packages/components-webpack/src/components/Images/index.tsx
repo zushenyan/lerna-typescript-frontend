@@ -6,7 +6,7 @@ import spinnerGif from '@/assets/images/spinner.gif';
 import Spinner from '@/assets/images/spinner.svg';
 
 const Wrapper = styled.div`
-  bordr: 1px solid black;
+  border: 1px solid black;
 `;
 
 const Images = (): ReactElement => (

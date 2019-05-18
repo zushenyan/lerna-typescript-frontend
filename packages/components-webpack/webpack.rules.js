@@ -22,7 +22,7 @@ module.exports.lintStyledComponents = {
   test: /\.tsx?$/,
   loader: 'stylelint-custom-processor-loader',
   exclude: /node_modules/,
-  // enforce: 'pre',
+  enforce: 'pre',
 };
 
 module.exports.sourceMap = {

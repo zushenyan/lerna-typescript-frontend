@@ -1,12 +1,8 @@
-import React, { ReactElement } from 'react';
+import styled from 'styled-components';
 
-export interface Props {
-  children: string;
-  onClick: () => void;
-}
-
-const Button = ({ children, onClick }: Props): ReactElement => (
-  <button onClick={onClick}>{children}</button>
-);
+const Button = styled.button`
+  background: none;
+  border: 1px solid blue;
+`;
 
 export default Button;
