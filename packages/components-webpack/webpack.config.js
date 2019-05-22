@@ -5,6 +5,8 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: `${__dirname}/dist`,
+    library: 'components',
+    libraryTarget: 'umd',
   },
   devtool: 'source-map',
   resolve: {
@@ -24,7 +26,19 @@ module.exports = {
     ],
   },
   externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      amd: 'react',
+      umd: 'react',
+      commonjs: 'react',
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      umd: 'react-dom',
+      commonjs: 'react-dom',
+    },
   },
 };

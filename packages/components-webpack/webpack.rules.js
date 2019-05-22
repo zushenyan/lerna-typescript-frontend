@@ -34,9 +34,6 @@ module.exports.sourceMap = {
 module.exports.rawImageTypes = {
   test: /\.(png|jpg|jpeg|gif)$/,
   loader: 'url-loader',
-  options: {
-    limit: 1,
-  },
 };
 
 module.exports.svg = {
