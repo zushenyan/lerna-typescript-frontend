@@ -31,3 +31,8 @@ declare module '*.png' {
   const content: string;
   export default content;
 }
+
+declare module 'babel-plugin-require-context-hook/register' {
+  const content: any;
+  export default content;
+}
