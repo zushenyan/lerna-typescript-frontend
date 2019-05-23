@@ -354,7 +354,7 @@ exports[`Storyshots Main initial props 1`] = `
       className="Content-sc-gnvxdo jygvLn"
     >
       <h1>
-        I am children of layout meo
+        I am children of layout
       </h1>
     </div>
   </div>
