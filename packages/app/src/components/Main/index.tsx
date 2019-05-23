@@ -11,7 +11,7 @@ const App = (): ReactElement => (
     <Button>aaa</Button>
     <Images />
     <Layout title="I am layout">
-      <h1>I am children of layout meow</h1>
+      <h1>I am children of layout meo</h1>
     </Layout>
   </Wrapper>
 );
