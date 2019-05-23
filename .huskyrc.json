@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "lerna run lint-staged"
+    "pre-commit": "lerna run lint-staged && lerna run test:ci"
   }
 }

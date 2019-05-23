@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Button, Images, Layout } from '@my-pkg/components-webpack';
+import { Button, Images, Layout } from '@mypkg/components';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
