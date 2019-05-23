@@ -1,5 +1,5 @@
 {
   "linters": {
-    "*.{ts,tsx}": ["eslint --fix", "stylelint", "test", "git add"]
+    "*.{ts,tsx}": ["eslint --fix", "stylelint", "yarn run test", "git add"]
   }
 }
